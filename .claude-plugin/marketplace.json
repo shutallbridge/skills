@@ -1,12 +1,32 @@
 {
   "name": "shutallbridge",
   "description": "Shu Takahashi's personal agent skills",
-  "owner": { "name": "Shu Takahashi" },
+  "owner": {
+    "name": "Shu Takahashi"
+  },
   "plugins": [
     {
       "name": "literature",
-      "source": "./skills/literature",
-      "description": "File-based literature library: add, search, summarize, maintain"
+      "source": "./",
+      "description": "File-based literature library: add, search, and manage papers",
+      "author": {
+        "name": "Shu Takahashi"
+      },
+      "skills": [
+        "./skills/literature-add",
+        "./skills/literature-search",
+        "./skills/literature-manage"
+      ],
+      "mcpServers": {
+        "literature-tools": {
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/shutallbridge/literature-tools",
+            "literature-tools"
+          ]
+        }
+      }
     }
   ]
 }
