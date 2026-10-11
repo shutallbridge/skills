@@ -1,0 +1,12 @@
+{
+  "name": "shutallbridge",
+  "description": "Shu Takahashi's personal agent skills",
+  "owner": { "name": "Shu Takahashi" },
+  "plugins": [
+    {
+      "name": "literature",
+      "source": "./skills/literature",
+      "description": "File-based literature library: add, search, summarize, maintain"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "literature",
+  "description": "File-based literature library: add, search, summarize, maintain",
+  "author": {
+    "name": "Shu Takahashi"
+  },
+  "skills": [
+    "./"
+  ],
+  "mcpServers": {
+    "literature-tools": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/shutallbridge/literature-tools",
+        "literature-tools"
+      ]
+    }
+  }
+}
