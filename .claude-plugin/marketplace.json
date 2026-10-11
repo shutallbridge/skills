@@ -8,6 +8,7 @@
     {
       "name": "literature",
       "source": "./",
+      "strict": false,
       "description": "File-based literature library: add, search, and manage papers",
       "author": {
         "name": "Shu Takahashi"
